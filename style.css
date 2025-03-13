@@ -1,16 +1,31 @@
 body {
+    width: 1200px;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0 auto;
+    
 }
-
+:root{
+    --main-color:#e0d8d833;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
 header {
-    background: #333;
-    color: #fff;
+    background: #670e0e;
+    color: #fdfcfc;
     padding: 20px;
     text-align: center;
+}
+#body{
+    background-color: white;
 }
 
 nav ul {
@@ -27,11 +42,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+#main{
+    background-color: var(--main-color);
+}
 
 section {
     padding: 20px;
     margin: 20px;
-    background: #fff;
     border-radius: 5px;
 }
 
@@ -40,11 +57,10 @@ h2 {
     padding-bottom: 5px;
 }
 
-.project, .job {
+#project, .job {
     margin-bottom: 15px;
     padding: 10px;
     border-left: 5px solid #333;
-    background: #f9f9f9;
 }
 
 footer {
@@ -53,4 +69,73 @@ footer {
     background: #333;
     color: white;
     margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #671c1c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8b2d2d;
+}
+#Recommendation {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#commentForm input, #commentForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    background-color: #5697c3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#commentForm button:hover {
+    background-color: #3e7696;
+}
+
+#commentSection {
+    margin-top: 20px;
+}
+
+.comment {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #7ac1f0;
 }
